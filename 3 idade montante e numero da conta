@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+ int short idade;
+ int montante;
+ int long numeroDaConta;
+
+ printf("qual sua idade\n");
+ scanf("%hd", &idade);
+ printf("informe seu montante a deposita\n");
+ scanf("%d", &montante);
+ printf("informe qual o numero da conta que voce vai depositar\n");
+ scanf("%ld", &numeroDaConta);
+
+ printf("sua idade e %hd voce vai depositar %d na conta de numero %ld",idade,montante,numeroDaConta);
+}
