@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+  int num;
+
+  printf("informe um numero \n");
+  scanf("%d", &num);
+
+  printf("os numeros separados fica \n");
+  int num1 = num/10000;
+  int num2 =(num%10000)/1000;
+  int num3 =(num % 1000)/100;
+  int num4 = (num % 100)/10;
+  int num5 = (num % 10);
+
+  printf("%d \t %d \t %d \t %d \t %d",num1,num2,num3,num4,num5);
+
+
+}
