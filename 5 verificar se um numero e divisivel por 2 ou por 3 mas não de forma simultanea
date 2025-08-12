@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &num);
+
+    if ((num % 2 == 0 && num % 3 != 0) || 
+        (num % 3 == 0 && num % 2 != 0)) {
+        printf("O numero %d e divisivel por 2 ou por 3, mas nao por ambos.\n", num);
+    } else if(num % 2==0 || num % 3 == 0) {
+        printf( "nao atende os criterios pois o numero %d e divisivel pelos dois .\n", num);
+    }else{
+        printf("nao e divisivel nem por 3 e nem por 2");
+    }
+
+}
